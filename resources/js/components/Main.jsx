@@ -5,12 +5,13 @@ import { BrowserRouter,Routes, Route, Link } from "react-router-dom";
 import Home from './Home';
 import About from './About';
 import Services from './Services';
+import Auth from './auth/Auth';
 
 function MyApp(){
     return (
         <BrowserRouter basename="/dealer">
             <Routes>
-                <Route path='/' element={<Home />} />
+                <Route path='/' element={<Auth />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/services' element={<Services />} />
             </Routes>
