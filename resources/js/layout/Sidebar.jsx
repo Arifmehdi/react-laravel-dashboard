@@ -212,10 +212,10 @@ function Sidebar() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link " href="https://bootstrapmade.com/content/demo/NiceAdmin/pages-blank.html">
+            <Link className="nav-link " to="/blank">
               <i className="bi bi-file-earmark"></i>
               <span>Blank</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </aside>

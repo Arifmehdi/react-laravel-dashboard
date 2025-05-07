@@ -1,13 +1,11 @@
-import { Link } from 'react-router-dom';
-import Layout from '../layout/Layout';
-
-function Dashboard() {
-
+import Layout from '../layout/Layout'
+import {Link} from 'react-router-dom';
+function Blank() {
     return (
         <Layout>
             <main id="main" className="main">
                 <div className="pagetitle">
-                    <h1>Dashboard Page</h1>
+                    <h1>Blank Page</h1>
                     <nav>
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item"><Link to="/dashboard">Home</Link></li>
@@ -41,4 +39,5 @@ function Dashboard() {
     );
 }
 
-export default Dashboard;
+
+export default Blank;
