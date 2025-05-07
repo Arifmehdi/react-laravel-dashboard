@@ -1,6 +1,25 @@
  import {Link} from 'react-router-dom';
+ import React, {useEffect} from 'react';
+ import $ from 'jquery';
 
  function Auth(){
+    useEffect(() => {
+        $('#loginForm').submit(function(e){
+            e.preventDefault();
+            $.ajax({
+                url: 'login',
+                type: 'Post',
+                data: $(this).serialize(),
+                dataType: 'json',
+                success: function(res){
+                    if(res.message == 'success'){
+                        window.location.href = `${window.baseUrl}/dashboard`;
+                    }
+                }
+
+            });
+        });
+    },[]);
     return (
         <main>
         <div className="container">
@@ -21,7 +40,7 @@
                                         <h5 className="card-title text-center pb-0 fs-4">Login to Your Account</h5>
                                         <p className="text-center small">Enter your email & password to login</p>
                                     </div>
-                                    <form className="row g-3 needs-validation" >
+                                    <form className="row g-3 needs-validation" id="loginForm" method="post">
                                         <div className="col-12">
                                             <label htmlFor="yourEmail" className="form-label">Email</label>
                                             <div className="input-group has-validation">

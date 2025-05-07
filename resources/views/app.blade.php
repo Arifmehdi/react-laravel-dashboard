@@ -9,10 +9,11 @@
     <meta name="robots" content="noindex, nofollow">
     <meta content="" name="description">
     <meta content="" name="keywords">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicons -->
-    <link href="assets/image/favicon.png" rel="icon">
-    <link href="assets/image/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="{{ url('') }}/assets/image/favicon.png" rel="icon">
+    <link href="{{ url('') }}/assets/image/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com/" rel="preconnect">
@@ -21,16 +22,16 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendors/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendors/quill/quil.snow.css" rel="stylesheet">
-    <link href="assets/vendors/quill/quill.bubble.css" rel="stylesheet">
-    <link href="assets/vendors/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendors/simple-datatables/style.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets/vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets/vendors/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets/vendors/quill/quil.snow.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets/vendors/quill/quill.bubble.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets/vendors/remixicon/remixicon.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets/vendors/simple-datatables/style.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -48,17 +49,20 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendors/chart.js/chart.umd.js"></script>
-    <script src="assets/vendors/echarts/echarts.min.js"></script>
-    <script src="assets/vendors/quill/quill.js"></script>
-    <script src="assets/vendors/simple-datatables/simple-datatables.js"></script>
-    <script src="assets/vendors/tinymce/tinymce.min.js"></script>
-    <script src="assets/vendors/php-email-form/validate.js"></script>
+    <script src="{{ url('') }}/assets/vendors/apexcharts/apexcharts.min.js"></script>
+    <script src="{{ url('') }}/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url('') }}/assets/vendors/chart.js/chart.umd.js"></script>
+    <script src="{{ url('') }}/assets/vendors/echarts/echarts.min.js"></script>
+    <script src="{{ url('') }}/assets/vendors/quill/quill.js"></script>
+    <script src="{{ url('') }}/assets/vendors/simple-datatables/simple-datatables.js"></script>
+    <script src="{{ url('') }}/assets/vendors/tinymce/tinymce.min.js"></script>
+    <script src="{{ url('') }}/assets/vendors/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="{{ url('') }}/assets/js/main.js"></script>
+    <script>
+        window.baseUrl = "{{ url('/') }}";
+    </script>
 
 
     {{-- <script defer

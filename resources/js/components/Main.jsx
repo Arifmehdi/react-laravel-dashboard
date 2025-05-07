@@ -10,6 +10,19 @@ import Dashboard from "./Dashboard";
 import Blank from './Blank';
 import Profile from './Profile';
 
+import $ from 'jquery';
+
+const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+$.ajaxSetup({
+    beforeSend: function(xhr, settings){
+        settings.url = window.baseUrl+ '/' + settings.url;
+    },
+    headers:{
+        'X-CSRF-Token' : csrfToken
+    }
+});
+
+
 function MyApp(){
     return (
         <BrowserRouter basename="/dealer">
