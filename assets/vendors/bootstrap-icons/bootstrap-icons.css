@@ -1,16 +1,11 @@
-/*!
- * Bootstrap Icons v1.11.3 (https://icons.getbootstrap.com/)
- * Copyright 2019-2024 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE)
- */
-
- @font-face {
+@font-face {
     font-display: block;
     font-family: "bootstrap-icons";
-    src: url("./fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6") format("woff2"),
-  url("./fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("woff");
-  }
-  
+
+  src: url("../fonts/bootstrap-icons.woff2") format("woff2"),
+  url("../fonts/bootstrap-icons.woff") format("woff");
+}
+
   .bi::before,
   [class^="bi-"]::before,
   [class*=" bi-"]::before {
@@ -25,7 +20,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   .bi-123::before { content: "\f67f"; }
   .bi-alarm-fill::before { content: "\f101"; }
   .bi-alarm::before { content: "\f102"; }

@@ -6,6 +6,7 @@ import Home from './Home';
 import About from './About';
 import Services from './Services';
 import Auth from './auth/Auth';
+import Dashboard from "./Dashboard";
 
 function MyApp(){
     return (
@@ -14,6 +15,7 @@ function MyApp(){
                 <Route path='/' element={<Auth />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/services' element={<Services />} />
+                <Route path="/dashboard" element={<Dashboard/>}/>
             </Routes>
         </BrowserRouter>
     );

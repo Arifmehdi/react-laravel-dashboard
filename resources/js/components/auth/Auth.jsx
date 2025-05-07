@@ -1,3 +1,5 @@
+ import {Link} from 'react-router-dom';
+
  function Auth(){
     return (
         <main>
@@ -43,7 +45,7 @@
                                             </div>
                                         </div>
                                         <div className="col-12">
-                                            <button className="btn btn-primary w-100" type="submit">Login</button>
+                                            <Link to="/dashboard" className="btn btn-primary w-100" type="submit">Login</Link>
                                         </div>
                                         <div className="col-12">
                                             <p className="small mb-0">Don't have account? <a href="#">Create an
@@ -53,7 +55,7 @@
                                 </div>
                             </div>
                             <div className="credits">
-                                Designed by <a href="#">Best Dream Car</a>
+                                Designed by <Link to="/">Best Dream Car</Link>
                             </div>
                         </div>
                     </div>
