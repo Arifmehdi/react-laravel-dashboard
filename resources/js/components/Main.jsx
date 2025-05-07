@@ -8,6 +8,7 @@ import Services from './Services';
 import Auth from './auth/Auth';
 import Dashboard from "./Dashboard";
 import Blank from './Blank';
+import Profile from './Profile';
 
 function MyApp(){
     return (
@@ -18,6 +19,7 @@ function MyApp(){
                 <Route path='/services' element={<Services />} />
                 <Route path="/dashboard" element={<Dashboard/>}/>
                 <Route path="/blank" element={<Blank/>} />
+                <Route path="/profile" element={<Profile/>} />
             </Routes>
         </BrowserRouter>
     );

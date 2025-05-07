@@ -176,10 +176,10 @@ function Sidebar() {
           </li>
           <li className="nav-heading">Pages</li>
           <li className="nav-item">
-            <a className="nav-link collapsed" href="https://bootstrapmade.com/content/demo/NiceAdmin/users-profile.html">
+            <Link className="nav-link collapsed" to="/profile">
               <i className="bi bi-person"></i>
               <span>Profile</span>
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a className="nav-link collapsed" href="https://bootstrapmade.com/content/demo/NiceAdmin/pages-faq.html">

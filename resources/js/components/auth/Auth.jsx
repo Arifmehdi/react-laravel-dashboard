@@ -19,16 +19,16 @@
                                 <div className="card-body">
                                     <div className="pt-4 pb-2">
                                         <h5 className="card-title text-center pb-0 fs-4">Login to Your Account</h5>
-                                        <p className="text-center small">Enter your username & password to login</p>
+                                        <p className="text-center small">Enter your email & password to login</p>
                                     </div>
                                     <form className="row g-3 needs-validation" >
                                         <div className="col-12">
-                                            <label htmlFor="yourUsername" className="form-label">Username</label>
+                                            <label htmlFor="yourEmail" className="form-label">Email</label>
                                             <div className="input-group has-validation">
                                                 <span className="input-group-text" id="inputGroupPrepend">@</span>
-                                                <input type="text" name="username" className="form-control"
-                                                    id="yourUsername" required />
-                                                <div className="invalid-feedback">Please enter your username.</div>
+                                                <input type="text" name="email" className="form-control"
+                                                    id="yourEmail" required />
+                                                <div className="invalid-feedback">Please enter your Email.</div>
                                             </div>
                                         </div>
                                         <div className="col-12">
@@ -45,7 +45,7 @@
                                             </div>
                                         </div>
                                         <div className="col-12">
-                                            <Link to="/dashboard" className="btn btn-primary w-100" type="submit">Login</Link>
+                                            <button className="btn btn-primary w-100" type="submit">Login</button>
                                         </div>
                                         <div className="col-12">
                                             <p className="small mb-0">Don't have account? <a href="#">Create an

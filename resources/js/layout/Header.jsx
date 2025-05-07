@@ -157,10 +157,10 @@ function Header(){
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item d-flex align-items-center" href="https://bootstrapmade.com/content/demo/NiceAdmin/users-profile.html">
+                  <Link className="dropdown-item d-flex align-items-center" to="/profile">
                     <i className="bi bi-person"></i>
                     <span>My Profile</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
@@ -184,10 +184,10 @@ function Header(){
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item d-flex align-items-center" href="#">
+                  <Link className="dropdown-item d-flex align-items-center" to="/">
                     <i className="bi bi-box-arrow-right"></i>
                     <span>Sign Out</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
